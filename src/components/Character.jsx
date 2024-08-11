@@ -25,7 +25,7 @@ const Character = ({ char }) => {
                     </p>
                     <p className="my-14">{t(`${char.id}.description`)}</p>
                     <Link
-                        href={"k"}
+                        href={`/${char.id}`}
                         className=" border-2 hover:text-gray-700 hover:shadow-1 hover:bg-white duration-300 border-white bg-transparent text-white py-3 px-2 rounded-xl"
                     >
                         see more
