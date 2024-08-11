@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
+
 const Character = ({ char }) => {
     const { t } = useTranslation();
 
@@ -16,17 +17,18 @@ const Character = ({ char }) => {
                         width={2000}
                         height={2000}
                         className="w-full h-full object-contain mx-auto"
+                        alt={t(`${char.id}.name`)} // Use translation for alt text
                     />
                 </div>
                 <div className="lg:mt-14 lg:w-1/2 w-full">
                     <p className="font-bold text-3xl ">
                         {+char.id < 10 && "0"}
-                        {char.id}. {t(`${char.id}.name`)}
+                        {char.id}. {t(`${char.id}.name`)} {/* Translate name */}
                     </p>
-                    <p className="my-14">{t(`${char.id}.description`)}</p>
+                    <p className="my-14">{t(`${char.id}.description`)}</p> {/* Translate description */}
                     <Link
                         href={`/${char.id}`}
-                        className=" border-2 hover:text-gray-700 hover:shadow-1 hover:bg-white duration-300 border-white bg-transparent text-white py-3 px-2 rounded-xl"
+                        className="border-2 hover:text-gray-700 hover:shadow-1 hover:bg-white duration-300 border-white bg-transparent text-white py-3 px-2 rounded-xl"
                     >
                         see more
                     </Link>
