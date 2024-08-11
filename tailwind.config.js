@@ -14,6 +14,9 @@ module.exports = {
                     DEFAULT: "89rem",
                 },
             },
+            boxShadow: {
+                1: "1px 1px 20px 0px rgba(255,255,255,1)",
+            },
         },
     },
     plugins: [],
