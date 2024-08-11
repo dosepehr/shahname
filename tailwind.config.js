@@ -6,7 +6,15 @@ module.exports = {
         "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     ],
     theme: {
-        extend: {},
+        extend: {
+            container: {
+                center: true,
+                padding: "4.5rem",
+                screens: {
+                    DEFAULT: "89rem",
+                },
+            },
+        },
     },
     plugins: [],
 };
