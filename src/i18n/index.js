@@ -30,10 +30,22 @@ const initI18n = async () => {
 
     const resources = {
         en: {
-            translation: translations.en,
+            translation: {
+                ...translations.en,
+                ui: {
+                    button: 'see more',
+                    shahname: 'Šāhnāmeh (The Book of Kings)',
+                },
+            },
         },
         fa: {
-            translation: translations.fa,
+            translation: {
+                ...translations.fa,
+                ui: {
+                    button: 'مشاهده بیشتر',
+                    shahname: 'شاهنامه',
+                },
+            },
         },
     };
 
