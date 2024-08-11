@@ -6,7 +6,7 @@ const Home = async () => {
     const characters = await res.json();
     return (
         <>
-            <div className="container">
+            <div className="container space-y-8">
                 {characters.map((char) => (
                     <Character char={char} key={char.id} />
                 ))}

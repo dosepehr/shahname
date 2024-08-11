@@ -4,7 +4,7 @@ import Link from "next/link";
 const Character = ({ char }) => {
     return (
         <div>
-            <div className="bg-white/15 p-14 flex rounded-[40px] flex-col lg:flex-row relative gap-14">
+            <div className="bg-white/15 p-4 sm:p-14 flex rounded-[40px] flex-col lg:flex-row relative gap-14">
                 <div className=" w-full md:w-3/4 lg:w-[38%] mx-auto lg:ml-0">
                     <Image
                         src={"http://localhost:4000/images/" + char.cover}
