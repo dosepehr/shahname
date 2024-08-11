@@ -7,13 +7,14 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
-    
   },
   "dependencies": {
+    "i18next": "^23.12.2",
     "json-server": "^1.0.0-beta.1",
     "next": "14.2.5",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-i18next": "^15.0.1"
   },
   "devDependencies": {
     "eslint": "^8",
