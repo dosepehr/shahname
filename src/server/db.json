@@ -1,38 +1,30 @@
 {
-    "characters":[
+    "characters": [
         {
-            "id":1,
-            "name":{
-                "fa":"اسفندیار",
-                "en":"Esfandiyār"
+            "id": 1,
+            "fa": {
+                "description": "توضیحات فارسی اسفندیار",
+                "name": "اسفندیار"
             },
-            "description":{
-                "fa":"توضیحات فارسی اسفندیار",
-                "en":"Esfandiyār or Espandiyār (Avestan: Spəntōδāta-; Middle Persian: Spandadāt; Persian: اسفندیار) is a legendary Iranian hero and one of the characters of Ferdowsi's Shahnameh. He was the son and the crown prince of the Kayanian King Goshtasp and Queen Katāyoun. He was the grandchild of Kay Lohrasp."
+            "en": {
+                "description": "Esfandiyār or Espandiyār (Avestan: Spəntōδāta-; Middle Persian: Spandadāt; Persian: اسفندیار) is a legendary Iranian hero and one of the characters of Ferdowsi's Shahnameh. He was the son and the crown prince of the Kayanian King Goshtasp and Queen Katāyoun. He was the grandchild of Kay Lohrasp.",
+                "name": "Esfandiyār"
             },
-            "cover":"esfandiyar/cover.png",
-            "images":[
-                "esfandiyar/1.png",
-                "esfandiyar/2.png"
-            ]
+            "cover": "esfandiyar/cover.png",
+            "images": ["esfandiyar/1.png", "esfandiyar/2.png"]
         },
         {
-            "id":2,
-            "name":{
-                "fa":"2اسفندیار",
-                "en":"2Esfandiyār"
+            "id": 2,
+            "fa": {
+                "description": "2توضیحات فارسی اسفندیار",
+                "name": "2اسفندیار"
             },
-            "description":{
-                "fa":"2توضیحات فارسی اسفندیار",
-                "en":"2Esfandiyār or Espandiyār (Avestan: Spəntōδāta-; Middle Persian: Spandadāt; Persian: اسفندیار) is a legendary Iranian hero and one of the characters of Ferdowsi's Shahnameh. He was the son and the crown prince of the Kayanian King Goshtasp and Queen Katāyoun. He was the grandchild of Kay Lohrasp."
+            "en": {
+                "description": "2Esfandiyār or Espandiyār (Avestan: Spəntōδāta-; Middle Persian: Spandadāt; Persian: اسفندیار) is a legendary Iranian hero and one of the characters of Ferdowsi's Shahnameh. He was the son and the crown prince of the Kayanian King Goshtasp and Queen Katāyoun. He was the grandchild of Kay Lohrasp.",
+                "name": "2Esfandiyār"
             },
-            "cover":"esfandiyar/cover.png",
-            "images":[
-                "esfandiyar/1.png",
-                "esfandiyar/2.png"
-            ]
+            "cover": "esfandiyar/cover.png",
+            "images": ["esfandiyar/1.png", "esfandiyar/2.png"]
         }
     ]
 }
-
-
