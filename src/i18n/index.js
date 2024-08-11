@@ -1,39 +1,51 @@
-import i18n from "i18next";
-import { initReactI18next } from "react-i18next";
+import i18n from 'i18next';
+import { initReactI18next } from 'react-i18next';
 
-const resources = {
-    en: {
-        translation: {
-            1: {
-                name: "Esfandiyār",
-                description:
-                    "Esfandiyār or Espandiyār (Avestan: Spəntōδāta-; Middle Persian: Spandadāt; Persian: اسفندیار) is a legendary Iranian hero and one of the characters of Ferdowsi's Shahnameh. He was the son and the crown prince of the Kayanian King Goshtasp and Queen Katāyoun. He was the grandchild of Kay Lohrasp.",
-            },
-            2: {
-                name: "2Esfandiyār",
-                description:
-                    "2Esfandiyār or Espandiyār (Avestan: Spəntōδāta-; Middle Persian: Spandadāt; Persian: اسفندیار) is a legendary Iranian hero and one of the characters of Ferdowsi's Shahnameh. He was the son and the crown prince of the Kayanian King Goshtasp and Queen Katāyoun. He was the grandchild of Kay Lohrasp.",
-            },
-        },
-    },
-    fa: {
-        translation: {
-            1: { name: "اسفندیار", description: "توضیحات فارسی اسفندیار" },
-            2: {
-                name: "2اسفندیار",
-                description: "2توضیحات فارسی اسفندیار",
-            },
-        },
-    },
+const fetchLangData = async () => {
+    const res = await fetch('http://localhost:4000/characters');
+    const characters = await res.json();
+
+    const data = {
+        fa: {},
+        en: {},
+    };
+
+    characters.forEach((character) => {
+        const { id, fa, en } = character;
+        data.fa[id] = {
+            name: fa.name,
+            description: fa.description,
+        };
+        data.en[id] = {
+            name: en.name,
+            description: en.description,
+        };
+    });
+
+    return data;
 };
 
-i18n.use(initReactI18next).init({
-    resources,
-    lng: "fa",
+const initI18n = async () => {
+    const translations = await fetchLangData();
 
-    interpolation: {
-        escapeValue: false,
-    },
-});
+    const resources = {
+        en: {
+            translation: translations.en,
+        },
+        fa: {
+            translation: translations.fa,
+        },
+    };
 
+    await i18n.use(initReactI18next).init({
+        resources,
+        lng: 'fa',
+        fallbackLng: 'en',
+        interpolation: {
+            escapeValue: false,
+        },
+    });
+};
+
+initI18n();
 export default i18n;
