@@ -5,18 +5,18 @@ const Intro = () => {
         <div className="container">
             <p>Shahnameh</p>
             <p>Hakim Abul-Qâsem Ferdowsi</p>
-            <div className="bg-cream-1 p-14 rounded-[20px] mb-8">
-                <div className="flex justify-between mb-1">
-                    <div className="w-80">
+            <div className="bg-cream-1 p-14 rounded-[20px] mb-16 lg:mb-8">
+                <div className="flex justify-between mb-1 items-center flex-col lg:flex-row">
+                    <div className="max-w-80">
                         <Image
                             src="/shahname.png"
                             alt="shahname"
                             width={1000}
                             height={1000}
-                            className="w-full"
+                            className="max-w-full"
                         />
                     </div>
-                    <div className="text-black/70 text-6xl font-normal w-1/2 h-fit flex flex-col">
+                    <div className="text-black/70 text-6xl font-normal w-full lg:w-1/2 h-fit flex flex-col gap-y-8 mb-16 lg:mb-0">
                         <p className="self-end !font-nast">
                             بسی رنج بردم در این سال سی
                         </p>
@@ -24,7 +24,7 @@ const Intro = () => {
                     </div>
                 </div>
                 <div className="text-black">
-                    <p className="!font-antique">
+                    <p className="!font-antique font-black text-xl">
                         Šāhnāmeh (The Book of Kings)
                     </p>
                     <p className="mt-8 !font-antique leading-8">
@@ -41,19 +41,21 @@ const Intro = () => {
                         cultural identity of Iran.
                     </p>
                 </div>
-                <div className="flex justify-between mb-1">
-                    <div className="w-80">
+                <div className="flex justify-between mb-1 items-center lg:items-start w-fit mx-auto lg:ml-0">
+                    <div className="max-w-80">
                         <Image
                             src="/ferdowsi.png"
                             alt="ferdowsi"
                             width={1000}
                             height={1000}
-                            className="w-full"
+                            className="max-w-full mx-auto"
                         />
                     </div>
                 </div>
-                <div className="text-black !font-antique">
-                    <p>Hakim Abul-Qâsem Ferdowsi</p>
+                <div className="text-black ">
+                    <p className="font-black text-xl !font-antique">
+                        Hakim Abul-Qâsem Ferdowsi
+                    </p>
                     <div className="mt-8 !font-antique leading-8">
                         Abul-Qâsem Ferdowsi Tusi (Persian: ابوالقاسم فردوسی
                         توسی; 940 – 1019/1025), also Ferdowsi (فردوسی), was a
