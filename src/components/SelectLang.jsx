@@ -21,8 +21,8 @@ const SelectLang = () => {
             />
             <label for="switch">
                 <span className="switch-x-toggletext">
-                    <span className="switch-x-unchecked">English</span>
-                    <span className="switch-x-checked">فارسی</span>
+                    <span className="switch-x-unchecked !text-white">English</span>
+                    <span className="switch-x-checked !text-white">فارسی</span>
                 </span>
             </label>
         </div>
