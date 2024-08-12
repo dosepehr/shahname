@@ -12,7 +12,7 @@ const Character = ({ char, isSingle = false }) => {
     return (
         <div className="container">
             <div
-                className="bg-white/15 p-4 sm:p-14 flex rounded-[40px] flex-col lg:flex-row relative gap-14 mb-8"
+                className="bg-white/15 p-4 sm:p-14 flex rounded-[20px] flex-col lg:flex-row relative gap-14 mb-8"
                 dir={`${i18n.language == "fa" ? "rtl" : "ltr"}`}
             >
                 {isSingle ? (

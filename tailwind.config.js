@@ -22,6 +22,11 @@ module.exports = {
                     1: "#F2E9E9",
                 },
             },
+            fontFamily: {
+                inter: "inter",
+                nast: "nast",
+                antique: ["antique", "vazir"],
+            },
         },
     },
     plugins: [],

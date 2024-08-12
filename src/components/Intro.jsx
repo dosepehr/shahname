@@ -16,14 +16,18 @@ const Intro = () => {
                             className="w-full"
                         />
                     </div>
-                    <div className="text-black/70 text-2xl font-normal w-1/2 h-fit flex flex-col">
-                        <p className="self-end">بسی رنج بردم در این سال سی</p>
-                        <p>عجم زنده کردم بدین پارسی</p>
+                    <div className="text-black/70 text-6xl font-normal w-1/2 h-fit flex flex-col">
+                        <p className="self-end !font-nast">
+                            بسی رنج بردم در این سال سی
+                        </p>
+                        <p className="!font-nast">عجم زنده کردم بدین پارسی</p>
                     </div>
                 </div>
                 <div className="text-black">
-                    <p>Šāhnāmeh (The Book of Kings) </p>
-                    <p className="mt-8">
+                    <p className="!font-antique">
+                        Šāhnāmeh (The Book of Kings)
+                    </p>
+                    <p className="mt-8 !font-antique leading-8">
                         The Shahnameh (Persian: شاهنامه, romanized: Šāhnāme,
                         lit. 'The Book of Kings', pronounced [ʃɒːhnɒːˈme]), also
                         transliterated Shahnama,[a] is a long epic poem written
@@ -48,9 +52,9 @@ const Intro = () => {
                         />
                     </div>
                 </div>
-                <div className="text-black">
+                <div className="text-black !font-antique">
                     <p>Hakim Abul-Qâsem Ferdowsi</p>
-                    <div className="mt-8">
+                    <div className="mt-8 !font-antique leading-8">
                         Abul-Qâsem Ferdowsi Tusi (Persian: ابوالقاسم فردوسی
                         توسی; 940 – 1019/1025), also Ferdowsi (فردوسی), was a
                         Persian poet and the author of Shahnameh ("Book of
