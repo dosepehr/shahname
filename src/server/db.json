@@ -1,7 +1,7 @@
 {
     "characters": [
         {
-            "id": 1,
+            "id": "1",
             "fa": {
                 "description": "توضیحات فارسی اسفندیار",
                 "name": "اسفندیار"
@@ -14,7 +14,7 @@
             "images": ["esfandiyar/1.png", "esfandiyar/2.png"]
         },
         {
-            "id": 2,
+            "id": "2",
             "fa": {
                 "description": "2توضیحات فارسی اسفندیار",
                 "name": "2اسفندیار"
