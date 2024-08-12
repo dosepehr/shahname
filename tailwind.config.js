@@ -15,7 +15,7 @@ module.exports = {
                 },
             },
             boxShadow: {
-                1: "1px 1px 20px 0px rgba(255,255,255,1)",
+                1: "10px 10px 30px 0px rgba(0,0,0,1)",
             },
             colors: {
                 cream: {

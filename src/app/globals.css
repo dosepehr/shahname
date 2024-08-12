@@ -2,35 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-    --foreground-rgb: 0, 0, 0;
-    --background-start-rgb: 214, 219, 220;
-    --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --foreground-rgb: 255, 255, 255;
-        --background-start-rgb: 0, 0, 0;
-        --background-end-rgb: 0, 0, 0;
-    }
-}
-
-body {
-    color: rgb(var(--foreground-rgb));
-    background: linear-gradient(
-            to bottom,
-            transparent,
-            rgb(var(--background-end-rgb))
-        )
-        rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-    .text-balance {
-        text-wrap: balance;
-    }
-}
 * {
     font-family: inter, vazir;
 }
@@ -116,29 +87,29 @@ body {
 }
 
 .checkbox-wrapper-35 .switch + label::before {
-    background-color: #05012c;
+    background-color: #ff0000;
     border-radius: 500px;
-    height: 15px;
+    height: 20px;
     margin-right: 8px;
     -webkit-transition: background-color 0.125s ease-out;
     transition: background-color 0.125s ease-out;
-    width: 25px;
+    width: 40px;
 }
 
 .checkbox-wrapper-35 .switch + label::after {
     background-color: #fff;
-    border-radius: 13px;
+    border-radius: 20px;
     box-shadow: 0 3px 1px 0 rgba(37, 34, 71, 0.05),
         0 2px 2px 0 rgba(37, 34, 71, 0.1), 0 3px 3px 0 rgba(37, 34, 71, 0.05);
-    height: 13px;
-    left: 1px;
+    left: 2.5px;
     position: absolute;
-    top: 1px;
+    top: 2.5px;
     -webkit-transition: -webkit-transform 0.125s ease-out;
     transition: -webkit-transform 0.125s ease-out;
     transition: transform 0.125s ease-out;
     transition: transform 0.125s ease-out, -webkit-transform 0.125s ease-out;
-    width: 13px;
+    width: 15px;
+    height: 15px;
 }
 
 .checkbox-wrapper-35 .switch + label .switch-x-text {
@@ -149,7 +120,7 @@ body {
 .checkbox-wrapper-35 .switch + label .switch-x-toggletext {
     display: block;
     font-weight: bold;
-    height: 15px;
+    height: 17px;
     overflow: hidden;
     position: relative;
     width: 50px;
@@ -186,12 +157,12 @@ body {
 }
 
 .checkbox-wrapper-35 .switch:checked + label::before {
-    background-color: #ffb500;
+    background-color: #15ff00;
 }
 
 .checkbox-wrapper-35 .switch:checked + label::after {
-    -webkit-transform: translate3d(10px, 0, 0);
-    transform: translate3d(10px, 0, 0);
+    -webkit-transform: translate3d(20px, 0, 0);
+    transform: translate3d(20px, 0, 0);
 }
 
 .checkbox-wrapper-35 .switch:checked + label .switch-x-unchecked {
