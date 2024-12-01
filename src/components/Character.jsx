@@ -15,10 +15,10 @@ const Character = ({ char, isSingle = false }) => {
                     <>
                         <div dir={`${i18n.language == 'fa' ? 'rtl' : 'ltr'}`}>
                             <p className='font-bold text-3xl text-white'>
-                                {t(`${char.id}.name`)}
+                                {char.name}
                             </p>
                             <p className='my-8 text-white'>
-                                {t(`${char.id}.description`)}
+                                {char.description}
                             </p>
                         </div>
                         <div className='grid grid-cols-1 md:grid-cols-3 gap-9'>
@@ -29,7 +29,7 @@ const Character = ({ char, isSingle = false }) => {
                                 width={2000}
                                 height={2000}
                                 className='w-full h-full object-contain mx-auto'
-                                alt={t(`${char.id}.name`)}
+                                alt={char.name}
                             />
                             {char.images.map((img, i) => (
                                 <div key={i}>
@@ -41,7 +41,7 @@ const Character = ({ char, isSingle = false }) => {
                                         width={2000}
                                         height={2000}
                                         className='w-full h-full object-contain mx-auto'
-                                        alt={t(`${char.id}.name`)}
+                                        alt={char.name}
                                     />
                                 </div>
                             ))}
@@ -60,7 +60,7 @@ const Character = ({ char, isSingle = false }) => {
                                 width={2000}
                                 height={2000}
                                 className='w-full h-full object-contain mx-auto'
-                                alt={t(`${char.id}.name`)}
+                                alt={char.name}
                             />
                         </div>
                         <div
@@ -69,10 +69,10 @@ const Character = ({ char, isSingle = false }) => {
                         >
                             <p className='font-bold text-3xl text-white'>
                                 {+char.id < 10 && '0'}
-                                {char.id}. {t(`${char.id}.name`)}
+                                {char.id}. {char.name}
                             </p>
                             <p className='my-14 text-white'>
-                                {t(`${char.id}.description`)}
+                                {char.description}
                             </p>{' '}
                             <Link
                                 href={`/${char.id}`}
