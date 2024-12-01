@@ -6,7 +6,8 @@ import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
 import i18n from '@/i18n';
 
-const Character = ({ char, isSingle = false }) => {
+const Character = ({ params, char, isSingle = false }) => {
+    const { lang } = params;
     const { t } = useTranslation();
     return (
         <div className='container'>
@@ -75,7 +76,7 @@ const Character = ({ char, isSingle = false }) => {
                                 {char.description}
                             </p>{' '}
                             <Link
-                                href={`/${char.id}`}
+                                href={`/${lang}/character/${char.id}`}
                                 className='border-2 hover:text-gray-700 hover:shadow-1 hover:bg-white duration-300 border-white bg-transparent text-white py-3 px-2 rounded-xl'
                             >
                                 {t('button')}

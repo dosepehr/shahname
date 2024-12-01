@@ -12,8 +12,8 @@ const nextConfig = {
         return [
             {
                 source: '/',
-                destination: '/fa',
-                permanent: true, // Use true for permanent redirect (HTTP 301)
+                destination: '/en',
+                permanent: true
             },
         ];
     },
