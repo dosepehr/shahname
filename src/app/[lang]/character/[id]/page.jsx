@@ -7,7 +7,7 @@ const page = async ({ params }) => {
     const data = await res.json();
     return (
         <div>
-            <Character char={data} isSingle />
+            <Character params={params} char={data} isSingle />
         </div>
     );
 };
